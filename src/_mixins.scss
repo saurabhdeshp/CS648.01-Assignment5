@@ -1,0 +1,33 @@
+@mixin image($offest:  0px) {
+    background: url($socialMediaImg) - 38px * $offest 0;
+  }
+  
+  @mixin headers($color, $fnt-wt, $fnt-size, $li-ht: 0) {
+    color: $color;
+    font-weight: $fnt-wt;
+    font-size: $fnt-size;
+    line-height: $li-ht;
+  }
+  
+  @mixin content-styles($width, $float) {
+    width: $width;
+    float: $float;
+  }
+  
+  @mixin break-at($args) {
+    @if length($args) == 1 {
+      @media (max-width: nth($args, 1)) {
+        @content;
+      }
+    }
+  }
+  
+  @mixin width-height($width, $height) {
+    width: $width;
+    height: $height;
+  }
+  
+  @mixin navbar($width, $height, $float) {
+    @include width-height($width, $height);
+    float: $float;
+  }

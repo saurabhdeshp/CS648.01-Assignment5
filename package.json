@@ -1,0 +1,17 @@
+{
+    "name": "cs64801assignment5",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.html",
+    "scripts": {
+      "start": "gulp"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "gulp": "^4.0.2",
+      "gulp-sass": "^4.0.2",
+      "node-sass": "^4.12.0"
+    }
+  }
